@@ -1,0 +1,9 @@
+#!/bin/bash
+sudo apt update -y
+sudo apt install apache2 -y
+sudo apt install wget unzip -y
+sudo systemctl start apache2
+sudo systemctl enable apache2
+sudo wget https://www.free-css.com/assets/files/free-css-templates/download/page290/wave-cafe.zip
+sudo unzip wave-cafe.zip
+sudo cp -rvf /2121_wave_cafe/*  /var/www/html/
